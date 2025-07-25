@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@layer components {
+.navbar{
+    @apply flex justify-between items-center w-full py-10;
+}
+.navbar-menu{
+    @apply  flex gap-6 text-[var(--primary-dark)] dark:text-white font-bold;
+}
+.navbar-menu li:hover{
+   @apply cursor-pointer transition-all shadow-2xl text-[var(--primary-main)] tracking-wider scale-105;
+}
+.navbar-right{
+    @apply flex gap-6 items-center;
+}
+.dot{
+    @apply  absolute top-0 right-0 w-2 h-2 bg-[var(--primary-main)] rounded-full;
+}
+  .navbar button {
+    @apply text-[#49557e] border-2 border-[var(--primary-main)] w-30 h-10 rounded-4xl shadow-lg;
+  }
+  .navbar button:hover {
+    @apply bg-[var(--primary-lighter)] scale-105;
+  }
+  .icon{
+  @apply text-[var(--primary-dark)] w-10 h-10;
+}
+.icon:hover{
+  @apply text-[var(--primary-dark)] scale-110;
+}
+.icon,button,li :hover{
+   @apply cursor-pointer shadow-2xl transition-all duration-300 ease-in-out;
+}
+.navbar .active{
+  @apply pb-0.5 border-b-2 border-b-[var(--primary-main)]  shadow-md text-[var(--primary-main)];
+}
+}

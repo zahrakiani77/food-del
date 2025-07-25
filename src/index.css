@@ -1,0 +1,27 @@
+@import "tailwindcss";
+:root {
+  font-family:  Georgia, serif, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+}
+@theme inline{
+  --primary: #49557e;
+  --primary-dark: #49557e;
+  --primary-lighter: #ffebee;
+  --primary-main: #bf360c;
+
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
