@@ -1,7 +1,6 @@
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SearchIcon from "@mui/icons-material/Search";
 import "./navbar.css";
-import Button from "@mui/material/Button";
 import { useState } from "react";
 
 const Navbar = () => {
