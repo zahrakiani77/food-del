@@ -4,29 +4,30 @@
 .navbar{
     @apply flex justify-between items-center w-full py-10;
 }
+
 .navbar-menu{
-    @apply  flex gap-6 text-[var(--primary-dark)] dark:text-white font-bold;
+    @apply hidden md:flex gap-6 text-[var(--primary-dark)] dark:text-white font-bold ;
 }
 .navbar-menu li:hover{
    @apply cursor-pointer transition-all shadow-2xl text-[var(--primary-main)] tracking-wider scale-105;
 }
 .navbar-right{
-    @apply flex gap-6 items-center;
+    @apply flex gap-4 md:gap-10 items-center justify-center;
 }
 .dot{
     @apply  absolute top-0 right-0 w-2 h-2 bg-[var(--primary-main)] rounded-full;
 }
   .navbar button {
-    @apply text-[#49557e] border-2 border-[var(--primary-main)] w-30 h-10 rounded-4xl shadow-lg;
+    @apply  hidden md:block text-white font-extrabold bg-[var(--primary-main)] w-40 h-14 rounded-4xl shadow-lg;
   }
   .navbar button:hover {
-    @apply bg-[var(--primary-lighter)] scale-105;
+    @apply bg-[var(--primary-dark-green)] scale-105;
   }
   .icon{
   @apply text-[var(--primary-dark)] w-10 h-10;
 }
 .icon:hover{
-  @apply text-[var(--primary-dark)] scale-110;
+  @apply text-[var(--primary-dark)] scale-125;
 }
 .icon,button,li :hover{
    @apply cursor-pointer shadow-2xl transition-all duration-300 ease-in-out;

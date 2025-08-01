@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@layer components{
+    .header{
+        @apply w-screen min-h-[300px] p-16 md:min-h-[450px] md:min-w-3xl bg-[var(--primary-color-yellow)] rounded-xl flex flex-col md:flex-row items-center justify-between shadow-lg;
+    }
+    .header-container{
+        @apply flex flex-col gap-4 w-full md:w-1/2 text-[var(--primary-dark-green)] m-16;
+    }
+    .header-container h1{
+        @apply font-bold text-center text-2xl md:text-4xl;
+    }
+       .header-container h2{
+        @apply font-bold text-center text-xl md:text-2xl;
+    }
+        .header-container h3{
+        @apply hidden md:block text-center font-medium text-xl md:text-2xl;
+    }
+      .video{
+        @apply md:w-1/2 h-48 md:h-72;
+    }
+    
+}

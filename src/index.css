@@ -1,14 +1,36 @@
 @import "tailwindcss";
+@import 'animate.css';
+@font-face {
+  font-family: 'Vazir';
+  src: url('./assets/fonts/Vazir-Light-FD.woff2');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('./assets/fonts/Vazir-FD.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Vazir';
+  src: url('./assets/fonts/Vazir-Bold-FD.woff2');
+  font-weight: 700;
+}
+
 :root {
-  font-family:  Georgia, serif, Avenir, Helvetica, Arial, sans-serif;
+  font-family:  'Vazir', serif, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 500;
 }
 @theme inline{
+  --font-vazir: 'Vazir';
   --primary: #49557e;
   --primary-dark: #49557e;
   --primary-lighter: #ffebee;
-  --primary-main: #bf360c;
+  --primary-main: #009E81;
+  --primary-color-yellow: #FFC042 ;
+  --primary-dark-green:#2C7865;
 
 }
 *{
@@ -19,6 +41,7 @@
 
 body{
   min-height: 100vh;
+  margin: 5px 16px;
 }
 
 a{
